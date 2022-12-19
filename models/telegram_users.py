@@ -9,8 +9,8 @@ Base = declarative_base()
 class User(Base):
     __tablename__ = "user_account"
     id = Column(Integer, primary_key=True)
-    name = Column(String)
-    fullname = Column(String)
-    department = Column(String)
-    hobbies = Column(String)
-    expectations = Column(String)
+    name = Column(String) //имя пользователя телеграм
+    fullname = Column(String) //имя указанное в анкете
+    department = Column(String) //отдел
+    hobbies = Column(String) //хобби
+    expectations = Column(String) //ожидания
